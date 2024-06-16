@@ -10,3 +10,12 @@
    comments. */
 
    console.log("Comments make your code more readable by others.");
+
+   // this is my single line comment
+   /*
+   this is 
+   my multi
+   line 
+   comment */
+   
+   console.log("this is not a comment")
