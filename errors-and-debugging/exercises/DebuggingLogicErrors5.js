@@ -3,26 +3,37 @@
 // Refactor the code to do this. Verify that your change works by updating the console.log statements.
 
 let launchReady = false;
-let fuelLevel = 17000;
+let fuelLevel = 20000;
 let crewStatus = true;
 let computerStatus = 'green';
+let fuelReady = true
+let computerReady = true
 
 if (fuelLevel >= 20000) {
    console.log('Fuel level cleared.');
-   launchReady = true;
+   fuelReady = true;
 } else {
    console.log('WARNING: Insufficient fuel!');
-   launchReady = false;
+   fuelReady = false;
 }
 
-console.log("launchReady = ", launchReady);
+console.log("fuelReady = ", fuelReady);
 
 if (crewStatus && computerStatus === 'green'){
    console.log('Crew & computer cleared.');
-   launchReady = true;
+   computerReady = true;
 } else {
    console.log('WARNING: Crew or computer not ready!');
-   launchReady = false;
+   computerReady = false;
 }
 
-console.log("launchReady = ", launchReady);
+console.log("computerReady = ", computerReady);
+
+if (fuelReady === true && computerReady === true) {
+   launchReady = true
+   console.log("Liftoff, matey!")
+} else {
+   console.log("Problem with fuel or computer, launch scrubbed.")
+}
+
+console.log("launchReady = " + launchReady)
