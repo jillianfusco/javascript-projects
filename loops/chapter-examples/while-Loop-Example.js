@@ -1,6 +1,9 @@
-let i = 0;
+const input = require('readline-sync');
 
-while (i < 51) {
-  console.log(i);
-  i++;
+let num = input.question('Please enter a positive number:');
+num = Number(num);
+
+while (num <= 0) {
+   num = input.question('Invalid input. Please enter a positive number:');
+   num = Number(num);
 }
