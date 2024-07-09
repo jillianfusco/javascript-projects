@@ -1,5 +1,13 @@
 // Code your orbitCircumference function here:
+// look up Math.PI
 
+function orbitCircumference(altitude) {
+  const radiusOfEarth = 6371;
+  let orbitRadius = radiusOfEarth + altitude;
+  return Math.round(2 * Math.PI * orbitRadius);
+}
+
+console.log(orbitCircumference(2000));
 
 // Code your missionDuration function here:
 
