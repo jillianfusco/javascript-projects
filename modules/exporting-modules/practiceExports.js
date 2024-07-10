@@ -14,3 +14,14 @@ function randomArrayElement(arr){
     let index = Math.floor(Math.random()*arr.length);
     return arr[index];
 }
+
+// export single module below
+// module.exports = isPalindrome;
+
+// export multiple modules
+
+module.exports = {
+    isPalindrome: isPalindrome,
+    evenOrOdd: evenOrOdd,
+    randomArrayElement: randomArrayElement
+}
