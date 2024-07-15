@@ -12,9 +12,13 @@ function whoWon(player1,player2){
      return 'Player 2 wins!';
    }
    
-   if (player1 === 'scissors' && player2 === 'rock '){
+   if (player1 === 'scissors' && player2 === 'rock'){
      return 'Player 2 wins!';
    }
  
    return 'Player 1 wins!';
  }
+
+let results = whoWon("scissors", "rock");
+console.log(results);
+ module.exports = whoWon;
