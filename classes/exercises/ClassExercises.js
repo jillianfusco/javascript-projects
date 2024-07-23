@@ -54,7 +54,7 @@ let prideAndPrejudice = new Novel("Pride and Prejudice", "Jane Austen", 1813, 11
 
 console.log(prideAndPrejudice);
 
-let shuttleManual = new Manual("Top Secret Shuttle Building Manual", "Redacted", 2013, 0000000000000, 1147, 1, false);
+let shuttleManual = new Manual("Top Secret Shuttle Building Manual", "Redacted", 2013, 0o0 , 1147, 1, false);
 
 console.log(shuttleManual);
 
