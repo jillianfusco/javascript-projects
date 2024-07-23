@@ -35,9 +35,9 @@ class CrewCandidate {
     }
 }
 
-let bubbbaBear = new CrewCandidate("Bubba Bear", 135, [88, 85, 90]);
-let merryMaltese = new CrewCandidate("Merry Maltese", 1.5, [93, 88, 97]);
-let gladGator = new CrewCandidate("Glad Gator", 225, [75, 78, 62]);
+const bubbbaBear = new CrewCandidate("Bubba Bear", 135, [88, 85, 90]);
+const merryMaltese = new CrewCandidate("Merry Maltese", 1.5, [93, 88, 97]);
+const gladGator = new CrewCandidate("Glad Gator", 225, [75, 78, 62]);
 
 // console.log(bubbbaBear);
 // console.log(merryMaltese);
