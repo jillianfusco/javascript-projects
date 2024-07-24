@@ -19,6 +19,5 @@ function whoWon(player1,player2){
    return 'Player 1 wins!';
  }
 
-let results = whoWon("scissors", "rock");
-console.log(results);
+
  module.exports = whoWon;
