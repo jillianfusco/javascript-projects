@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouseover Event</title>
+    <script>
+        window.addEventListener("load", function() {
+            let list = document.getElementById("lane-list");
+            list.addEventListener("mouseover", function (event) {
+                let element = event.target;
+                element.innerHTML += ">";
+                console.log("target", element);
+            });
+        });
+    </script>
+</head>
+<body>
+    Mouseover Race
+    <ul id="lane-list">
+        <li>Lane 1</li>
+        <li>Lane 2</li>
+        <li>Lane 3</li>
+    </ul>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="ring-button">Ring Bell</button>
+    <button id="greet-button">Greet Friends</button>
+    <p id="main-text"></p>
+    <script>
+      function youRang() {
+        document.getElementById("main-text").innerHTML += "you rang...";
+        console.log("you rang...");
+      }
+      function greetFriends() {
+        document.getElementById("main-text").innerHTML += "Hello Friends!";
+        console.log("Hello Friends!");
+      }
+      // Obtain a reference to the button element
+      let ringButton = document.getElementById("ring-button");
+      let greetButton = document.getElementById("greet-button");
+      // Set named function youRang as the click event handler
+      ringButton.addEventListener("click", youRang);
+      greetButton.addEventListener("click", greetFriends);
+    </script>
+  </body>
+</html> -->
