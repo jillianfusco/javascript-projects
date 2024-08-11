@@ -2,24 +2,33 @@
 
 <head>
 	<meta charset="utf-8">
-	<script>
-		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
-	</script>
+	<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-	<form id="searchForm">
+	<form id="searchForm" target="_blank">
     <!-- TODO: add form elements -->
-		<label for="">
-			Text Input
-			<input type="text" name="q">
-		</label>
-		<label for="">
-		<input type="radio" name="engine">
+		<label for="q">Search Here: <input type="text" id="q" name="q" ></label><br>
+		
+		<label for="google"><input id="google" type="radio" name="engine" value="google">Google</label><br>
+
+		<label for="duckDuckGo"><input id="duckDuckGo" type="radio" name="engine" value="duckDuckGo">Duck Duck Go</label><br>
+
+		<label for="bing"><input id="bing" type="radio" name="engine" value="bing">Bing</label><br>
+
+		<label for="ask"><input id="ask" type="radio" name="engine" value="ask">Ask</label><br>
+
+		<button id="submit" type="submit" value="Go!">Go!</button>
+
+		<div id="error-box">
+			<p id="error-message"></p>
+		</div>
 	</form>
 
+	
+
+
+<script src="script.js"></script>
 </body>
