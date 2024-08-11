@@ -3,12 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>Rocket Simulation</title>
-    <style>
-      label { display: block; margin-bottom: 7px;}
-    </style>
+    <link rel="stylesheet" href="style.css">
+
+    
   </head>
   <body>
     <!-- TODO: add form here -->
+     <form action="https://handlers.education.launchcode.org/request-parrot" method="POST">
+
+      <label for="testName">Test Name: <input type="text" name="testName" id="testName"></label>    
+      
+      <label for="date">Test Date: <input type="date" name="date" id="date"></label>
+      
+      <label for="rocketType">Rocket Type: 
+      <select name="rocketType" id="rocketType">
+        <option value="">Select one</option>
+        <option value="brant">Brant</option>
+        <option value="lynx">Lynx</option>
+        <option value="orion">Orion</option>
+        <option value="terrier">Terrier</option>
+      </select></label><br>
+      
+      <label for="boosterCount">Number of Rocket Boosters: <input type="number" id="boosterCount" name="boosterCount" min="1" max="9"></label>
+
+      
+      <label for="windRating">Wind Rating: </label>
+        <label for="windRating">No Wind<input type="radio" id="windRating" name="windRating" value="0"></label>
+        <label for="windRating">Mild<input type="radio" id="windRating" name="windRating" value="10"></label>
+        <label for="windRating">Strong<input type="radio" id="windRating" name="windRating" value="20"></label>
+      
+      <label for="productionSevers"> Use Production Grade Servers: 
+        <input type="checkbox" value="productionSevers" id="productionSevers">
+      </label>
+            
+      <button type="submit" id="submit-btn">Run Simulation</button>
+      <button type="reset">Reset Form</button>
+     </form>
+     <script src="script.js"></script>
   </body>
   
 </html>
